@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="hibrido" sortOrder="1" translate="label">
+			<label>Hibrido</label>
+		</tab>
+		<section id="theme_options" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1" translate="label">
+			<label>Theme Options</label>
+			<tab>hibrido</tab>
+			<resource>Hibrido_ThemeSettings::config_hibrido_themesettings</resource>
+			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1" translate="label">
+				<label>General Options</label>
+				<field id="buttons_color" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1" translate="label" type="text">
+					<label>Buttons Color</label>
+					<comment/>
+					<validate>validate-length minimum-length-6 maximum-length-6 alphanumeric</validate>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
